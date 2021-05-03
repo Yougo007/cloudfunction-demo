@@ -21,6 +21,6 @@ steps:
   args: [-c, 'pip install -r requirements.txt']
   #dir: 'function/dir/from/repo/root'
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['functions', 'deploy', 'hello-world', '--runtime', 'python37', '--entry-point', 'helloworld', '--trigger-http', '--allow-unauthenticated']
+  args: ['functions', 'deploy', 'hello-world', '--runtime', 'python37', '--entry-point', 'hello_http', '--trigger-http', '--allow-unauthenticated']
   #dir: 'function/dir/from/repo/root'
 # [END functions_ci_cd_cloud_build]
