@@ -60,7 +60,7 @@ def hello_http(request):
     elif request_args and 'name' in request_args:
         name = request_args['name']
     else:
-        name = 'Yannish, trust you enjoyed the demo'
+        name = 'Phewwww!! That went well, trust you enjoyed the demo'
     return name
     #return 'Hello {}!'.format(escape(name))
 # [END functions_helloworld_http]
