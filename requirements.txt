@@ -1,5 +1,5 @@
 flask==1.1.2
 google-cloud-error-reporting==1.1.2
-pytest==3.4.2
+pytest==6.2.1
 pytest-cov==2.5.1
 pytest-dependency==0.3.2
