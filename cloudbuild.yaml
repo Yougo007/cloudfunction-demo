@@ -12,7 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# [START functions_ci_cd_cloud_build]
 steps:
 - name: 'gcr.io/yougo-projects/custom-image'
   entrypoint: /bin/sh
