@@ -13,7 +13,7 @@
 # limitations under the License.
 
 steps:
-- name: 'gcr.io/yougo-projects/custom-image'
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: /bin/sh
   args: [-c, 'pip install -r requirements.txt', 'gcloud config list']
 
