@@ -16,7 +16,6 @@ steps:
 - name: 'gcr.io/yougo-projects/custom-image'
   entrypoint: /bin/sh
   args: [-c, 'pip install -r requirements.txt', 'gcloud config list']
-  timeout: 2000s
 
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['functions', 'deploy', 'hello-world', '--runtime', 'python37', '--entry-point', 'hello_http', '--trigger-http', '--allow-unauthenticated']
