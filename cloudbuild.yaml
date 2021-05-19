@@ -15,7 +15,7 @@
 steps:
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: /bin/sh
-  args: [-c, 'pip install -r requirements.txt', 'gcloud config list']
+  args: [-c, 'pip install -r requirements.txt', 'pytest', 'gcloud config list']
 
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['functions', 'deploy', 'hello-world', '--runtime', 'python37', '--entry-point', 'hello_http', '--trigger-http', '--allow-unauthenticated']
