@@ -20,3 +20,4 @@ steps:
 
 - name: 'gcr.io/cloud-builders/gcloud'
   args: ['functions', 'deploy', 'hello-world', '--runtime', 'python37', '--entry-point', 'hello_http', '--trigger-http', '--allow-unauthenticated']
+timeout: 2000s
